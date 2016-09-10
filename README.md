@@ -9,15 +9,6 @@ For more information must read the following documentation:
 * [FCM XMPP Connection Server](https://firebase.google.com/docs/cloud-messaging/xmpp-server-ref): There you will see the syntax of upstream messages and downstream messages.
 * [About FCM Messages](https://firebase.google.com/docs/cloud-messaging/concept-options): There you will see the structure of thetype of messages.
 * [Send Messages](https://firebase.google.com/docs/cloud-messaging/send-message): There you will see how to send messages to FCM CSS.
- 
- 
-##Architecture
- 
- 1. **Downstream Messages:** server-to-device through FCM
- ![Downstream Message](http://wedevol.com/fcm-sources/downstream.png)
- 
- 2. **Upstream Messages:** device-to-server through FCM
-  ![Upstream Message](http://wedevol.com/fcm-sources/upstream.png)
 
 ##How it works?
 
@@ -25,6 +16,15 @@ For more information must read the following documentation:
  * Then, from a device you send an upstream message to FCM who then sends that upstream to your server (FCM XMPP Connection Server).
  * Then, within that server you handle that upstream message to send a downstream message to the targeted device(s) through FCM. (You can handle in the way you want. Here I provide 3 action types: register, message and echo).
  * Finally, on the device side you handle those downstream messages being received to give a push notification. (This part need to be developed in the android or iOS device)
+
+##Architecture
+
+1. **Downstream Messages:** server-to-device through FCM
+![Downstream Message](http://wedevol.com/fcm-sources/downstream.png)
+
+2. **Upstream Messages:** device-to-server through FCM
+![Upstream Message](http://wedevol.com/fcm-sources/upstream.png)
+
 
 ##Libraries used
 
