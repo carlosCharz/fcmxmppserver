@@ -65,7 +65,7 @@ Those are passed into the CcsClient by either calling the prepareClient() method
  2. When the user navigates away from the app (you close the connection): The user is now considered "Away" or "Offline". You use the XMPP Connection Server and FCM to handle the incoming messages to send notifications to client devices through FCM downstream messages.There's no active connection to the Ejabberd server!
  3. Once the user taps on the notification, the app comes back to foreground and you re-connect to Ejabberd and back to step 1.
 
-*I know there are other alternatives that are also good but until now I analyze these two.*
+*I know there are other alternatives that are also good but until now I just analyzed these two.*
  
 ##Related definitions
 
