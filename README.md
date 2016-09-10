@@ -5,7 +5,7 @@ This is a sample java project to showcase the Firebase Cloud Messaging (FCM) XMP
 For more information must read the following documentation: 
  
  * [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/): There you will see introduction to FCM.
-* [FCM Server](https://developers.google.com/cloud-messaging/server): There you will see the technical requirements for this application server.
+* [FCM Server](https://firebase.google.com/docs/cloud-messaging/server): There you will see the technical requirements for this application server.
 * [FCM XMPP Connection Server](https://firebase.google.com/docs/cloud-messaging/xmpp-server-ref): There you will see the syntax of upstream messages and downstream messages.
 * [About FCM Messages](https://firebase.google.com/docs/cloud-messaging/concept-options): There you will see the structure of thetype of messages.
 * [Send Messages](https://firebase.google.com/docs/cloud-messaging/send-message): There you will see how to send messages to FCM CSS.
