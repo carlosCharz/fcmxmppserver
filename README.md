@@ -52,21 +52,6 @@ To run this project you need a FCM project sender ID and a FCM server key. You c
 
 Those are passed into the CcsClient by either calling the prepareClient() method or by providing those as arguments to the EntryPoint main method.
 
-##Chat App - Alternative 1: Firebase + XMPP + FCM
- 
- 1. When the app is in foreground: You can use Firebase realtime database to send and receive messages, change user's presence, etc. You don't send upstream messages during this time!
- 2. When the user navigates away from the app: The user is now considered "Away" or "Offline". You use the XMPP Connection Server and FCM to handle the incoming messages to send notifications to client devices through FCM downstream messages.
- 3. Once the user taps on the notification, the app comes back to foreground and we re-connect to Firebase and back to step 1.
-
-
-##Chat App - Alternative 2: Ejabberd + XMPP + FCM
- 
- 1. When the app is in foreground: You use Smack library to connect directly to your Ejabberd server, send messages, change user's presence, etc. The connection to your Ejabberd is kept during that time. You don't send upstream messages during this time!
- 2. When the user navigates away from the app (you close the connection): The user is now considered "Away" or "Offline". You use the XMPP Connection Server and FCM to handle the incoming messages to send notifications to client devices through FCM downstream messages.There's no active connection to the Ejabberd server!
- 3. Once the user taps on the notification, the app comes back to foreground and you re-connect to Ejabberd and back to step 1.
-
-*I know there are other alternatives that are also good but until now I just analyzed these two.*
- 
 ##Related definitions
 
  * **XMPP**: eXtensible Messaging and Presence Protocol (XMPP). It is a protocol based on Extensible Markup Language (XML) that was originally designed for instant messaging (IM) and online presence detection. XMPP is a protocol for streaming XML elements in order to exchange messages and presence information in close to real time.
