@@ -177,9 +177,9 @@ public class CcsClient implements PacketListener {
 		try {
 			Map<String, Object> jsonMap = (Map<String, Object>) JSONValue.parseWithException(json);
 			Object messageType = jsonMap.get("message_type");
-			CcsInMessage inMessage = MessageHelper.createCcsInMessage(jsonMap);
 
 			if (messageType == null) {
+				CcsInMessage inMessage = MessageHelper.createCcsInMessage(jsonMap);
 				handleUpstreamMessage(inMessage); // normal upstream message
 				return;
 			}
