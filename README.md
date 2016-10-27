@@ -24,10 +24,10 @@ _**Here is the link for the upgrade of this sample project. Now, that project us
 ##Architecture
 
 1. **Downstream Messages:** server-to-device through FCM
-![Downstream Message](http://corporacionkristalia.com/fcm-sources/downstream.png)
+![Downstream Message](http://wedevol.com/fcm-sources/downstream.png)
 
 2. **Upstream Messages:** device-to-server through FCM
-![Upstream Message](http://corporacionkristalia.com/fcm-sources/upstream.png)
+![Upstream Message](http://wedevol.com/fcm-sources/upstream.png)
 
 
 ##Libraries used
