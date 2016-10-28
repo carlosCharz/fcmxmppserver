@@ -61,9 +61,6 @@ public class MessageHelper {
 		if (msg.isContentAvailable() != null && msg.isContentAvailable()) {
 			map.put("content_available", true);
 		}
-		if (msg.isDelayWhileIdle() != null && msg.isDelayWhileIdle()) {
-			map.put("delay_while_idle", true);
-		}
 		if (msg.getTimeToLive() != null) {
 			map.put("time_to_live", msg.getTimeToLive());
 		}

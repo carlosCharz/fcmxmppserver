@@ -19,8 +19,6 @@ public class CcsOutMessage {
 	private String priority;
 	// Flag to wake client devices
 	private Boolean contentAvailable;
-	// Flag to delay the delivery while device is idle
-	private Boolean delayWhileIdle;
 	// Time to live
 	private Integer timeToLive;
 	// Flag to request confirmation of message delivery
@@ -84,14 +82,6 @@ public class CcsOutMessage {
 
 	public void setContentAvailable(Boolean contentAvailable) {
 		this.contentAvailable = contentAvailable;
-	}
-
-	public Boolean isDelayWhileIdle() {
-		return delayWhileIdle;
-	}
-
-	public void setDelayWhileIdle(Boolean delayWhileIdle) {
-		this.delayWhileIdle = delayWhileIdle;
 	}
 
 	public Integer getTimeToLive() {
