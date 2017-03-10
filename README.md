@@ -10,7 +10,7 @@ For more information must read the following documentation:
 * [About FCM Messages](https://firebase.google.com/docs/cloud-messaging/concept-options): There you will see the structure of thetype of messages.
 * [Send Messages](https://firebase.google.com/docs/cloud-messaging/send-message): There you will see how to send messages to FCM CSS.
 
-_**Here is the link for the upgrade of this sample project. Now, that project uses the latest version at this time of the Smack library (4.1.8).**_
+_**Here is the link for the upgrade of this sample project. Now, that project uses the latest version at this time of the Smack library (4.1.9).**_
 
 * [Upgrade Smack library from 3.x to 4.x](https://github.com/carlosCharz/fcmxmppserverv2): There you will see what the new changes are. Basically, it is the same application. I just changed the library dependencies and the needed updates to make it work.
 
