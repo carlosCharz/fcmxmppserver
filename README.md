@@ -10,7 +10,7 @@ For more information must read the following documentation:
 * [About FCM Messages](https://firebase.google.com/docs/cloud-messaging/concept-options): There you will see the structure of thetype of messages.
 * [Send Messages](https://firebase.google.com/docs/cloud-messaging/send-message): There you will see how to send messages to FCM CSS.
 
-_**HERE IS THE LINK FOR THE UPGRADE OF THIS SAMPLE PROJECT. Now, that project uses the latest version at this time of the Smack library (4.1.9). I added a troubleshooting section if you are dealing with any known issue (It applies to this project as well).**_
+_**HERE IS THE LINK FOR THE UPGRADE OF THIS SAMPLE PROJECT. Now, that project uses the latest version at this time of the Smack library (4.2.0). I added a troubleshooting section if you are dealing with any known issue (It applies to this project as well).**_
 
 * [Upgrade Smack library from 3.x to 4.x](https://github.com/carlosCharz/fcmxmppserverv2): There you will see what the new changes are. Basically, it is the same application. I just changed the library dependencies and the needed updates to make it work.
 
@@ -24,10 +24,10 @@ _**HERE IS THE LINK FOR THE UPGRADE OF THIS SAMPLE PROJECT. Now, that project us
 ##Architecture
 
 1. **Downstream Messages:** server-to-device through FCM
-![Downstream Message](http://wedevol.com/fcm-sources/downstream.png)
+![Downstream Message](http://corporacionkristalia.com/fcm-sources/downstream.png)
 
 2. **Upstream Messages:** device-to-server through FCM
-![Upstream Message](http://wedevol.com/fcm-sources/upstream.png)
+![Upstream Message](http://corporacionkristalia.com/fcm-sources/upstream.png)
 
 
 ##Libraries used
