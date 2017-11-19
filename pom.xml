@@ -28,4 +28,21 @@
 			<version>${json-simple.version}</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+		<finalName>xmpp-server</finalName>
+		<plugins>
+			<!-- Set a JDK compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 </project>
