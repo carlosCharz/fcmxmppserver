@@ -71,14 +71,14 @@ public class CcsClient implements PacketListener {
 	}
 
 	private CcsClient() {
-		// Add GcmPacketExtension
+		// Add FcmPacketExtension
 		ProviderManager.getInstance().addExtensionProvider(Util.FCM_ELEMENT_NAME, Util.FCM_NAMESPACE,
 				new PacketExtensionProvider() {
 
 					@Override
 					public PacketExtension parseExtension(XmlPullParser parser) throws Exception {
 						String json = parser.nextText();
-						GcmPacketExtension packet = new GcmPacketExtension(json);
+						FcmPacketExtension packet = new FcmPacketExtension(json);
 						return packet;
 					}
 				});
@@ -160,8 +160,8 @@ public class CcsClient implements PacketListener {
 	public void processPacket(Packet packet) {
 		logger.log(Level.INFO, "Received: " + packet.toXML());
 		Message incomingMessage = (Message) packet;
-		GcmPacketExtension gcmPacket = (GcmPacketExtension) incomingMessage.getExtension(Util.FCM_NAMESPACE);
-		String json = gcmPacket.getJson();
+		FcmPacketExtension fcmPacket = (FcmPacketExtension) incomingMessage.getExtension(Util.FCM_NAMESPACE);
+		String json = fcmPacket.getJson();
 		try {
 			Map<String, Object> jsonMap = (Map<String, Object>) JSONValue.parseWithException(json);
 			Object messageType = jsonMap.get("message_type");
@@ -304,7 +304,7 @@ public class CcsClient implements PacketListener {
 	 */
 	public void send(String jsonRequest) {
 		// TODO: Resend the message using exponential back-off!
-		Packet request = new GcmPacketExtension(jsonRequest).toPacket();
+		Packet request = new FcmPacketExtension(jsonRequest).toPacket();
 		connection.sendPacket(request);
 	}
 
