@@ -15,7 +15,7 @@ public class ProcessorFactory {
 
 	public static PayloadProcessor getProcessor(String action) {
 		if (action == null) {
-			throw new IllegalStateException("ProcessorFactory: Action must not be null");
+			throw new IllegalStateException("ProcessorFactory: Action must not be null! Options: 'REGISTER', 'ECHO', 'MESSAGE'");
 		}
 		if (action.equals(Util.BACKEND_ACTION_REGISTER)) {
 			return new RegisterProcessor();
@@ -24,6 +24,6 @@ public class ProcessorFactory {
 		} else if (action.equals(Util.BACKEND_ACTION_MESSAGE)) {
 			return new MessageProcessor();
 		}
-		throw new IllegalStateException("ProcessorFactory: Action " + action + " is unknown");
+		throw new IllegalStateException("ProcessorFactory: Unknown action: " + action + ". Options: 'REGISTER', 'ECHO', 'MESSAGE'");
 	}
 }

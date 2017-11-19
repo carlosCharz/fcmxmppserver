@@ -2,6 +2,8 @@ package com.wedevol.xmpp;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.jivesoftware.smack.XMPPException;
 
@@ -15,6 +17,9 @@ import com.wedevol.xmpp.util.Util;
  * purposes
  */
 public class EntryPoint {
+	
+	public static final Logger logger = Logger.getLogger(EntryPoint.class.getName());
+	
 	public static void main(String[] args) {
 		final String fcmProjectSenderId = args[0];
 		final String fcmServerKey = args[1];
@@ -25,7 +30,7 @@ public class EntryPoint {
 		try {
 			ccsClient.connect();
 		} catch (XMPPException e) {
-			e.printStackTrace();
+			logger.log(Level.SEVERE, "Error trying to connect.", e);
 		}
 
 		// Send a sample downstream message to a device
