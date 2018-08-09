@@ -12,7 +12,7 @@ For more information must read the following documentation:
 
 _**ADDITIONAL USEFUL LINKS**_
 
-* [Upgrade Smack library from 3.x to 4.x + Connection Draining Impl.](https://github.com/carlosCharz/fcmxmppserverv2): This project uses the latest version at this time of the Smack library (4.2.4). There you will see what the new changes are. Basically, it is the same application. I just changed the library dependencies and the needed updates to make it work. I added the connection draining implementation and a troubleshooting section if you are dealing with any known issue.
+* [Upgrade Smack library from 3.x to 4.x + Connection Draining Impl.](https://github.com/carlosCharz/fcmxmppserverv2): This project uses the latest version at this time of the Smack library (4.3.0). There you will see what the new changes are. Basically, it is the same application. I just changed the library dependencies and the needed updates to make it work. I added the connection draining implementation and a troubleshooting section if you are dealing with any known issue.
 * [FCM Connection Draining solution explanation](https://youtu.be/6AQCnNWPksg): This video explains how I handle the FCM Connection Draining message.
 
 ## How it works?
