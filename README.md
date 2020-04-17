@@ -25,10 +25,10 @@ _**ADDITIONAL USEFUL LINKS**_
 ## Architecture
 
 1. **Downstream Messages:** server-to-device through FCM
-![Downstream Message](http://corporacionkristalia.com/fcm-sources/downstream.png)
+![Downstream Message](http://wedevol.com/github/fcmtest/downstream.png)
 
 2. **Upstream Messages:** device-to-server through FCM
-![Upstream Message](http://corporacionkristalia.com/fcm-sources/upstream.png)
+![Upstream Message](http://wedevol.com/github/fcmtest/upstream.png)
 
 
 ## Libraries used
@@ -82,7 +82,7 @@ _**Any improvement or comment about the project is always welcome! As well as ot
 
 ## License
 ```javas
-Copyright 2016 Carlos Becerra
+Copyright 2020 Carlos Becerra
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
