@@ -40,5 +40,6 @@ public class EntryPoint {
 		CcsOutMessage message = new CcsOutMessage(toRegId, messageId, dataPayload);
 		String jsonRequest = MessageHelper.createJsonOutMessage(message);
 		ccsClient.send(jsonRequest);
+		cssClient.disconnect();
 	}
 }
