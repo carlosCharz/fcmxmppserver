@@ -151,6 +151,12 @@ public class CcsClient implements PacketListener {
 	public void reconnect() {
 		// Try to connect again using exponential back-off!
 	}
+	
+	public void disconnect() {
+		if (connection != null) {
+			connection.disconnect();
+		}
+	}
 
 	/**
 	 * Handles incoming messages
